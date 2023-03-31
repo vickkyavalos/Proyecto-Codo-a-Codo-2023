@@ -1,0 +1,45 @@
+/* HEADER*/
+    header {
+        background-color: #3d57db;
+    }
+    .logo_img {
+        width: 5%;
+        height: 5%;
+    }
+    .nombre_pag {
+        position: absolute;
+		top: 5%;
+		left: 15%;
+        text-transform: uppercase;
+		color: #000000;
+		font-weight: bold;
+		font-size: 15px;
+    }
+    nav{
+		position: absolute;
+		top: 5%;
+		right: 1%;
+    }
+    nav li {
+        display: inline;
+        margin: 0 0 0 10px;
+    }
+    nav a {
+        text-transform: uppercase;
+		color: #000000;
+		font-weight: bold;
+		font-size: 15px;
+		text-decoration: none;
+    }
+    nav a:hover {
+		color: #c48c19;
+		text-decoration: underline;
+    }
+    .buscador {
+		position: absolute;
+		top: 2%;
+		right: 1%;
+    }
+/* BODY*/
+
+/* FOOTER*/
