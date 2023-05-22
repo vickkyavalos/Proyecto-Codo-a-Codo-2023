@@ -7,4 +7,4 @@ __Integrantes__ (Grupo 2)
 * Avalos Victoria Inés
 * Mira Magali
 * Olmedo Gabriel
-* Villanueva Mathias
+* Romero Benítez Jonathan Sebastian
