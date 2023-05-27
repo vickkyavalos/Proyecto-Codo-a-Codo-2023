@@ -1,0 +1,90 @@
+:root {
+    --colorTextos: #114B5F;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    
+    background: #134E5E; 
+    background: -webkit-linear-gradient(to right, #114B5F, #F3E9D2);  
+    background: linear-gradient(to left, #F3E9D2, #114B5F);
+    height: 650px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {text-align: center;
+    font-weight: 900;
+}
+
+p {
+    text-align: center;
+    margin-top: 15px;
+}
+form {
+    background-color: #f1eee8;
+    padding: 50px;
+    /* box-shadow: 0 0 6px 0 rgba(255, 255, 255, 0.8); */
+    border-radius: 20px;
+}
+
+.form {
+    width: 100%;
+    margin: auto;
+}
+
+form .celda{
+    position: relative;
+    margin: 45px;
+}
+
+input {
+    background: none;
+    color: #114B5F;
+    font-size: 16px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid var(--colorTextos);
+}
+
+input:focus{
+    outline: none;
+}
+
+div.botones{
+    text-align: center;
+    padding-top: 5px;
+}
+
+button {
+    border-radius: 5px;
+    margin-bottom: 5px;
+    padding: 10px;
+    margin: 0 5px;
+}
+
+#botenviar {
+    background-color: #114B5F;
+    color: #F3E9D2;
+}
+
+#botenviar:hover {
+    background-color: #1A936F;
+}
+
+#botborrar {
+    background-color: #e0d9ca;
+    color: #114B5F;
+}
+
+#botborrar:hover {
+    background-color: #F3E9D2;
+}
