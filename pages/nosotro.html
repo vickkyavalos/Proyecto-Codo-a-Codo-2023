@@ -4,19 +4,34 @@
 	<title>Sobre Nosotros</title>
 	<link href="/css/nosotro.css" rel="stylesheet">
     <link rel="icon" href="/image/logo.png">
+	<script src="https://kit.fontawesome.com/ba5c97a2f9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-	<header>
-		<h1>ExploreSci</h1>
-		<nav>
-			<ul>
-				<li><a href="/index.html">Inicio</a></li>
-				<li><a href="#">Registro/Novedades</a></li>
-				<li><a href="/pages/contacto.html">Contacto</a></li>
-				<li><a href="/pages/bio1.html">Biología</a></li>
-			</ul>
-		</nav>
+	<header><!--header con el nombre y logo de la página-->
+		<div class="contenedor-logo">
+			<img src="/image/logo.png" alt="logo" class="logo">
+			<h1 id="titulo">ExploreSci</h1>
+		</div>
 	</header>
+	<nav><!--comienza barra de navegación-->
+		<ul class="menu">
+		  <li class="item"><a href="index.html">Inicio</a></li>
+		  <li class="item has-submenu">
+			<a tabindex="0">Ciencias</a>
+			<ul class="submenu"><!--submenú de ciencias-->
+			  <li class="subitem"><a href="/pages/astronomia.html">Astronomía</a></li>
+			  <li class="subitem"><a href="/pages/bio4.html">Biología</a></li>
+			  <li class="subitem"><a href="#">Historia</a></li>
+			  <li class="subitem"><a href="/pages/psicologia.html">Psicología</a></li>
+			</ul>
+		  </li>
+		  <li class="item"><a href="/pages/formulario.html">Novedades</a></li>
+		  <li class="item"><a href="#">Contacto</a></li>
+			<li class="item"><a href="/pages/nosotro.html">Sobre Nosotros</a></li>
+		  <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+		</ul>
+	  </nav>
+	<br><br>
 
     <main>
 		<section class="integrante">
@@ -32,12 +47,12 @@
 
 		<section class="integrante">
 			<aside>
-				<img src="/image/Mathías.png">
+				<img src="/image/Jon.png">
 			</aside>
 			<article>
 				<h2>Jonathan Benítez</h2>
 				<p>Me encargo de la página de astronomía y de registro/novedades.</p>
-				<a href="https://github.com/MatDevSJN">Más sobre mí</a>
+				<a href="https://github.com/Jonsrb">Más sobre mí</a>
 			</article>
 		</section>
 
@@ -65,7 +80,20 @@
 	</main>
 
 	<footer>
-		<p>&copy; 2023 Todos los derechos reservados.</p>
+		<div class="icon-flex"> 
+			<a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+			<a href="#"><i class="fa-brands fa-instagram" style="color: #fcfcfd;"></i></a>     
+			<a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></i></a> <!--falta cambiar tamaño-->
+		</div>
+		<p>Copyright© 2023 ExploreSci</p>
 	</footer>
+
+
+
+
+
+
+
+	<script src="/js/main.js"></script>
 </body>
 </html>
