@@ -14,35 +14,32 @@
     
 </head>
 <body>
-    
-        <header><!--header con el nombre y logo de la página-->
-            <div class="contenedor-logo">
-                <img src="/image/logo.png" alt="logo" class="logo">
-                <h1 id="titulo">ExploreSci</h1>
-            </div>
-        </header>
-        <nav class="nav-bar"><!--barra de navegación-->
-            <ul class="menu" id="menu">
-                <li><a href="index.html" class="active">Inicio</a></li>                
-                <li><a href="#">Astronomía</a></li>              
-                <li><a href="#">Biología</a></li>              
-                <li><a href="#">Historia</a></li>           
-                <li><a href="/pages/Psicología.html">Psicología</a></li>               
-                <li><a href="#">Novedades</a></li>               
-                <li><a href="#">Contacto</a></li>               
-                <li><a href="#">Sobre Nosotros</a></li>
+
+    <header><!--header con el nombre y logo de la página-->
+        <div class="contenedor-logo">
+            <img src="/image/logo.png" alt="logo" class="logo">
+            <h1 id="titulo">ExploreSci</h1>
+        </div>
+    </header>
+    <nav><!--comienxa barra de navegación-->
+        <ul class="menu">
+          <li class="item"><a href="index.html">Inicio</a></li>
+          <li class="item has-submenu">
+            <a tabindex="0">Ciencias</a>
+            <ul class="submenu"><!--submenú de ciencias-->
+              <li class="subitem"><a href="#">Astronomía</a></li>
+              <li class="subitem"><a href="/pages/bio1.html">Biología</a></li>
+              <li class="subitem"><a href="#">Historia</a></li>
+              <li class="subitem"><a href="/pages/psicologia.html">Psicología</a></li>
             </ul>
-            <a class="close" href="#"><!--hamburger menu-->
-                <span class="material-icons">
-                </span>
-                </a>
-              </ul>
-              <a class="hamburger" href="#menu">
-                <span class="material-icons">
-                    <i class="fa-solid fa-bars" style="color: #d9e9d4;"></i>
-                </span>
-              </a>
-        </nav>
+          </li>
+          <li class="item"><a href="#">Novedades</a></li>
+          <li class="item"><a href="#">Contacto</a></li>
+            <li class="item"><a href="/pages/nosotro.html">Sobre Nosotros</a></li>
+          <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
+
         <br><br>
         <div class="psico">
             <h2>Psicología</h2>
@@ -58,6 +55,7 @@
                     </p>
                 </div>
             </div>
+            <br>
             <div class="flex-container">
                 <div class="texto">
                     <ul>
@@ -75,7 +73,7 @@
                     <p class="texto1">Ramas de la Psicología</p>
                 </div>
             </div>
-
+            <br>
              <section class="psicoT"><!--infoo-->
                 <p>En este caso nos vamos a centrar en dos que hoy en día tienen mucha relevancia en la sociendad:</p>
                 <ul class="psicoT">
@@ -98,6 +96,7 @@
                         </p>
                     </div>
                 </div>
+                <br>
                 <div class="flex-container">
                     <div class="texto"> 
                         <p>La psicología social utiliza métodos científicos para comprender cómo las influencias sociales repercuten en el comportamiento humano. Busca explicar cómo los sentimientos, el comportamiento y los pensamientos están influenciados por la presencia real, imaginaria o implícita de otras personas.
@@ -110,17 +109,31 @@
                         </div>
                 </div>
              </section>
-
+             <br><br>
              <aside>
                 <div class="saludM">
                 <h4>IMPORTANCIA DE LA SALUD MENTAL</h4>
-                <p>La salud mental es de suma importancia para el bienestar general de una persona y su calidad de vida. 
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor magni obcaecati, illum incidunt eligendi officia? Laudantium pariatur veritatis quas, accusantium, aperiam inventore quisquam, aut ullam illum maxime hic perferendis! Perferendis!
+                <p>La importancia de la salud mental radica en que ante su ausencia, la persona es incapaz de desenvolverse adecuadamente en la sociedad, incluyendo el campo laboral. 
+                    También su ausencia suele comprometer la salud física de la persona, generando patologías y enfermedades que pueden llegar a ser crónicas.
+                    Las principales ventajas de que contar con una adecuada salud mental son las siguientes:
+                    <ul>
+                        <li>Aumenta la productividad</li>
+                        <li>Mejora las relaciones sociales</li>
+                        <li>Mejora la salud física</li>
+                        <li>Mantienes actitudes positivas</li>
+                    </ul>
                 </p>
                 </div>
-                
              </aside>
 
-        
+             <footer>
+                <div class="icon-flex"> 
+                    <a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram" style="color: #fcfcfd;"></i></a>     
+                    <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></i></a> <!--falta cambiar tamaño-->
+                </div>
+                <p>Copyright© 2023 ExploreSci</p>
+            </footer>
+       <script src="/js/main.js"></script> 
 </body>
 </html>

@@ -6,6 +6,7 @@
     --verdePastel: #d9e9d4;
     --beige: #f5efe1;
     --black: #000;
+    --fondoBody:  #fcfffb;
     font-family: 'Inter', sans-serif,Verdana, Geneva, Tahoma, sans-serif;
     --text-color: #f8efef;
     
@@ -20,7 +21,7 @@
 
 body{
   min-height: 100vh;
-  background-color: white;
+  background-color: var(--fondoBody);
   justify-content: center;
   font-family: Verdana;
 }
@@ -44,56 +45,135 @@ h1{
     color: var(--blue);
   }
 
-@media screen and (max-width:600px){
-    .logo{ 
-        width: 60px; margin: 5px;
-    } h1{
-        font-size: 25px; font-weight: 500; text-align: center; margin: 5px;
-    }}
-@media screen and (min-width:700px){
-    .logo{ 
-        width: 70px; margin: 5px;
-    } h1{
-        font-size: 40px; font-weight: 700; text-align: center; margin: 5px;
-    }}
-
 /*barra de navegación*/
-nav{
-    justify-content: center;
-    background-color:#1a936f;
-    width: 100%;
-    height: 80px;
+nav {
+    background-color: var(--green);
+    padding: 0 15px;
     align-items: center;
-    display: flex;
-    padding: 0 100px;
 }
-.nav-bar ul{
-    display: flex;
-}
-.nav-bar ul li a{
-    display: block; 
-    margin: 0.5px;
+nav a {
     color: var(--text-color);
-    border-radius: 50px;
-    padding: 10px 25px;
-    transition: 0.2s;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif ;
+  }
+.menu, .submenu {
+    list-style-type: none;
 }
-.nav-bar ul li a:hover{
-    color: var(--blue);
-    background-color: var(--verdePastel);
+.item {
+    padding: 10px;
 }
-.nav-bar ul li a.active{
-    color: var(--blue);
-    background-color: var(--VerdeClaro);
+.item.button {
+    padding: 9px 5px;
 }
-@media only screen and (max-width:1320px) {
-    nav{
-        padding: 0 50px;
-}}
-@media only screen and (max-width:1100px) {
-    nav{
-        padding: 0 30px;
-}}
+.item:not(.button) a:hover, .item a:hover::after {
+    color: var(--VerdeClaro);
+}
+  /* menú para celulares */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+.menu li.subitem a {
+    padding: 15px;
+}
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.active .item {
+    display: block;
+}
+  /* Submenu up from mobile screens */
+.submenu {
+    display: none;
+}
+.submenu-active .submenu {
+    display: block;
+}
+.has-submenu i {
+    font-size: 12px;
+}
+.has-submenu > a::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    content: "\f078";
+    color: var(--VerdeClaro);
+    padding-left: 5px;
+}
+.subitem a {
+    padding: 10px 15px;
+}
+.submenu-active {
+    background-color: var(--green);
+    border-radius: 3px;
+}
+  
+  /* Tablet menu */
+@media all and (min-width: 700px) {
+.menu {
+    justify-content: center;
+    }
+.logo {
+    flex: 1;
+    }
+.item.button {
+    width: auto;
+    order: 1;
+    display: block;
+}
+.toggle {
+    flex: 1;
+    text-align: right;
+    order: 2;
+}
+}
+  
+  /* Desktop menu */
+ @media all and (min-width: 960px) {
+.menu {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: none;
+}
+.logo {
+    order: 0;
+}
+.item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+}
+.submenu-active .submenu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    background: var(--green);
+}
+.toggle {
+    display: none;
+}
+.submenu-active {
+    border-radius: 0;
+}
+}
+
 
 /*titulo psicología*/
 h2{
@@ -101,24 +181,28 @@ h2{
     font-size: 45px;
     margin: 70px;
     text-align: center;
-    font-family: Verdana;
+    font-family:  'Inter', sans-serif,;
 }
 
 /*información Psicología*/
 .flex-container {
     display: flex;
     justify-content: center;
-    margin: 10px;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 50%;
+    background-color: white;
 }
 .texto{
-    text-align: center;
-    padding-left: 50px;    
-    width: 500px;
+    text-align: center;   
+    width: 50%;
     height: 200;
     padding: 50px;
 }
 .texto1{
     margin-top: 100px;
+    width: 50%;
     text-align: center;
     font-weight: 600;
     font-size: 25px;
@@ -134,7 +218,6 @@ h2{
 
 .psicoT{
     text-align: center;
-    background-color: var(--VerdeClaro);
     height: 100px;
     color: var(--blue);
     font-size: 20px;
@@ -147,3 +230,34 @@ h2{
     padding: 50px;
     font-family: 'Inter',
 }
+.saludM{
+    width: 50%;
+    height: 30%;
+    margin: 25px auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: rgba(241, 29, 29, 0.23) 0px 3px 6px, rgba(241, 29, 29, 0.23) 0px 3px 6px;
+    text-align: center;
+}
+/*Footeer*/
+footer{
+    background-color: var(--green);
+  }
+  
+  footer p{
+    font-family: 'Inter', sans-serif;
+    text-align: start;
+    margin-left: 15px;
+    font-size: 16px;
+    color: var(--text-color);
+  }
+  
+  .icon-flex{
+    display: flex;
+    justify-content: center;
+  }
+  .icon-flex i{
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
