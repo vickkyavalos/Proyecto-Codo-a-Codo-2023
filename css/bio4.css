@@ -303,3 +303,28 @@ nav a {
 .text6{
   color: #fafafa;
 }
+
+/* Estilos responsive */
+@media screen and (max-width: 1024px) {
+  .header-title {
+    font-size: 32px;
+  }
+  
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  
+  .grid-item {
+    min-height: 300px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .header-title {
+    font-size: 24px;
+  }
+  
+  .grid-item {
+    min-height: 250px;
+  }
+}
