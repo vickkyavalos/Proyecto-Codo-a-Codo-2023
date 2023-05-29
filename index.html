@@ -4,34 +4,159 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ExploreSci</title>
     <link rel="stylesheet" href="style.css">
-    <title>Proyecto-23030-g-2</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/ba5c97a2f9.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <img class="logo_img" src="image/logo.png" alt="logo-pagina">
-        <p class="nombre_pag">PAGINA DE DIV. CIENTIFICA</p>
-        <nav>
-            <ul class="lista_inicial">
-                <li><a href="index.html" >Home</a></li>
-                <li><a href="Newsletter.html">Newsletter</a></li>
-                <li><a href="">Biologia</a></li> <!-- FALTA AGREGAR ESTE LINK -MV -->
-                <li><a href="">Astronomia</a></li>  <!-- FALTA AGREGAR ESTE LINK -MV -->
-                <li><a href="">Contacto</a></li><!-- FALTA AGREGAR ESTE LINK -MV -->
-            </ul>
-        </nav>
-        <div class="buscador">
-            <textarea class="caja-busqueda" cols="10" rows="1" placeholder="Buscar"></textarea>
-            <button>Buscar</button>
+    <header><!--header con el nombre y logo de la página-->
+        <div class="contenedor-logo">
+            <img src="/image/logo.png" alt="logo" class="logo">
+            <h1 id="titulo">ExploreSci</h1>
         </div>
     </header>
-    <main>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio consectetur distinctio in officiis nostrum velit magnam voluptatum deserunt vitae quo a dolor quos mollitia ipsa consequatur animi, porro eligendi nobis. Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga quia necessitatibus maiores rem, veritatis corrupti iusto natus totam obcaecati facilis animi quae temporibus non officia. Odit eum sequi vitae voluptate? Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime quia molestiae eos ex accusantium. Labore maxime odit, esse aut pariatur sapiente blanditiis ea vero quibusdam dolore incidunt, voluptate quos enim?
-        Reprehenderit enim nostrum voluptatum repellat nihil nobis a, tempora illo. Facilis fugiat praesentium eos tempora, commodi, tempore culpa iste, distinctio minus non corrupti porro temporibus fuga quae neque omnis officiis.
-        Aliquam numquam error itaque eos quas inventore provident laudantium quia dolores architecto recusandae repellendus pariatur est, tempora, suscipit mollitia tempore nisi blanditiis nam dolore ab, omnis ad voluptatibus excepturi. Quod.
-    </main>
+    <nav><!--comienza barra de navegación-->
+        <ul class="menu">
+          <li class="item"><a href="index.html">Inicio</a></li>
+          <li class="item has-submenu">
+            <a tabindex="0">Ciencias</a>
+            <ul class="submenu"><!--submenú de ciencias-->
+              <li class="subitem"><a href="/pages/astronomia.html">Astronomía</a></li>
+              <li class="subitem"><a href="/pages/bio4.html">Biología</a></li>
+              <li class="subitem"><a href="#">Historia</a></li>
+              <li class="subitem"><a href="/pages/psicologia.html">Psicología</a></li>
+            </ul>
+          </li>
+          <li class="item"><a href="/pages/formulario.html">Novedades</a></li>
+          <li class="item"><a href="/pages/contacto.html">Contacto</a></li>
+            <li class="item"><a href="/pages/nosotro.html">Sobre Nosotros</a></li>
+          <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
+    <br>
+    <div class="container"><!--ANIMACIÓN-->
+        <h2 class="title">
+          <span class="title-word title-word-1">¡Bienvenidos</span>
+          <span class="title-word title-word-2">a</span>
+          <span class="title-word title-word-3">ExploreSci</span>
+        </h2>
+      </div><br>
+
+    <div class="info">
+        <section><!--información de la página-->
+        <p>Esta página web está diseñada para satisfacer la curiosidad de todos aquellos interesados en las diferentes ramas de las Ciencias. Ya sea que te apasione la Astronomía, 
+            la Historia, la Biología, la Psicología o cualquier otra disciplina científica. Esperamos que encuentres en este 
+            espacio una fuente de inspiración e información valiosa que te impulse a seguir explorando y aprendiendo sobre las Ciencias.</p>
+            <br>
+            <p> ¡Te invitamos a que veas las novedades más recientes de las ciencias y que sigan explorando a través de las diferentes secciones!</p>
+      </section>
+    </div>
+
+    <br><br>
+
+    <section class="novedades-ciencias"> <!--falta agregar novedades de las ciencias y los links-->
+        <div class="flex-container"><!--historia-->
+            <div class="imagenText">
+                <img src="image/druidas.jpg" alt="el santuario de Stonehenge" class="imgDatos">
+                <span><button class="btn"><a href="·">Historia</a></button></span>      
+            </div>
+            <div class="datos">          
+                <h3>Datos sobre los druidas</h3> 
+                <br>          
+                <ul>
+                    <li> •El término "druida" se conocía en las orillas orientales del Mediterráneo: servía para referirse a "aquellos que mejor ven y perciben lo que vendrá; los que adivinan</li>
+                    <li> •Eran los únicos que poseían los recursos intelectuales y técnicos suficientes para llevar a buen término negociaciones y redactar tratados. Establecieron las primeras leyes y prepararon las constituciones de algunos pueblos galos</li>             
+                    <li> •La mayor parte de nuestro conocimiento del Druidismo (como a menudo se lo llama) proviene de documentos históricos escritos por los Antiguos Romanos y más tarde por los cristianos. </li>              
+                    <li> •La gran razón por la cual los druidas no escribieron sobre su propia cultura fue porque era completamente oral. Los druidas necesitaban saber todos sus hechizos, rituales y sabiduría de memoria</li>           
+                    <li> •Una cosa que definió la religión celta fue el bosque sagrado. Una arboleda es un grupo de árboles, y los druidas delimitarían ciertas arboledas para sus rituales.</li>               
+                    <li> •El número tres era muy importante para Druidry. Aparte de la triple muerte y las tres clases de druidas, en la Galia se creía que el universo estaba dividido en tres partes. Los celtas también adoptaron el antiguo símbolo de tres espirales conjuntas, conocido como el triskeli</li>
+                </ul>                            
+            </div>
+        </div>
+
+        <div class="flex-container"><!--psicología-->       
+            <div class="datos1">   
+                <h3>Datos Psicologícos</h3>
+                <br>
+                <ul>
+                    <li> •El dolor emocional se recuerda más que el dolor físico y tiene más efecto en su comportamiento.</li>            
+                    <li> •La felicidad, la ira, la tristeza, el miedo, el asco y la sorpresa son las seis emociones que se expresan universalmente.</li>              
+                    <li> •Existen personas incapaces de reconocer caras, estos casos de personas que no pueden reconocer rostros están causados por un trastorno denominado prosopagnosia.n casos más severos, los afectados pueden no ser capaces de reconocerse ellos mismos delante de un espejo o viéndose en una fotografía.</li>             
+                    <li> •Los estudios muestran que no recordamos el 90% del contenido de nuestros sueños y que, aun si llegásemos a recordarlos, la mitad de este contenido lo olvidaríamos al cabo de cinco minutos de despertarnos, ya que el cerebro capta nuevos estímulos y tiende a desprenderse de esa información. </li>                
+                    <li> •Cuando dormimos nuestro cerebro segrega la mayor parte de la hormona encargada del crecimiento de los músculos y los huesos. Por esta razón es absolutamente fundamental que los niños descansen y duerman las horas necesarias.</li>             
+                    <li> •La inteligencia puede ser dividida en dos categorías principales: inteligencia fluida, basada en la agilidad mental, e inteligencia cristalizada, basada en la habilidad a la hora de usar la información memorizada.</li>
+                </ul>
+           
+        </div>
+        <div class="imagenText">
+            <img src="/image/psicología.jpg" alt="psicologia libro" class="imgDatos"> 
+            <span><button class="btn"><a href="/pages/psicologia.html">Psicología</a></button></span>
+        </div>
+    </div>
+
+    
+    <div class="flex-container"><!--Biología-->
+        <div class="imagenText">
+            <img src="image/biologia.jpg" alt="" class="imgDatos">
+            <span><button class="btn"><a href="/pages/bio1.html">Biología</a></button></span>
+        </div>
+        <div class="datos">
+            <h3>Novedades sobre la Biología</h3> 
+            <br>
+            <h4>¿Que es "electroma"?</h4>
+            <p>En las últimas décadas, muchas de las investigaciones científicas que buscaban develar cómo funciona el cuerpo humano 
+                se enfocaron en estudiar tres sistemas clave: el genoma, el proteoma y el microbioma. El primero es la secuencia de ADN 
+                que posee cada organismo y que contiene toda su información genética. El segundo, el conjunto de proteínas que fabrican los genes, que son los "ladrillos esenciales" de la vida. 
+                Y el tercero es el ecosistema de microorganismos que viven en el cuerpo y son determinantes para la salud.
+                En las últimas décadas, muchas de las investigaciones científicas que buscaban develar cómo funciona el cuerpo humano se enfocaron en estudiar tres sistemas 
+                clave: el genoma, el proteoma y el microbioma. La bioelectricidad es la forma en que nuestras células se comunican entre sí
+                explicó en un reciente artículo en el sitio Nesta la divulgadora científica Sally Adee, una experta en este campo, y autora del libro "Somos eléctricos"
+            </p>
+            <h4>¿Cómo se genera?</h4>
+            <p>Todos los elementos que tenemos en nuestro cuerpo, por ejemplo, el sodio, el potasio, el calcio, el magnesio y el zinc, atraviesan una reacción química que hace que se separen sus átomos, 
+                formando lo que se conoce como iones, que son partículas con carga eléctrica</p>
+            
+        </div>
+    </div>
+
+    <div class="flex-container">
+        <div class="datos1">
+            
+            <h3>Novedades astronómicas</h3><!--astronomía-->
+            <br>
+            <h4>Eclipse Solar Híbrido</h4>
+            <p>¿Qué es un eclipse híbrido?
+                Un eclipse se produce cuando un cuerpo celeste (ya sea un planeta o un satélite) bloquea la luz procedente de otro. 
+                Desde la Tierra, se pueden ver claramente cuando suceden con el Sol y la Luna, pero este tipo de fenómenos también se dan en otros puntos del espacio.
+                El eclipse híbrido es uno de los menos conocidos en el mundo, ya que tarda décadas en ocurrir, y es especial porque se producen dos tipos a la vez: un anular pasa a total por un breve periodo y luego vuelve a ser anular.
+                Por este motivo, a este fenómeno también se lo puede llamar como eclipse anular-solar.El eclipse híbrido es uno de los menos conocidos en el mundo, tarda décadas en ocurrir, y es especial porque se producen dos tipos a la vez: 
+                un anular pasa a total por un breve periodo y luego vuelve a ser anular. Por este motivo,también se lo puede llamar como eclipse anular-solar.
+                <h4> ¿Cómo ver un eclipse solar?</h4>
+                Se recomienda que es necesario tener los ojos debidamente protegidos para poder observar este tipo de fenómenos. Es necesario utilizar unas gafas especiales, ya que no son válidas los anteojos de sol, cristales ahumados u otros inventos caseros.
+                Además, la NASA sugiere ponerse en contacto con museos de ciencia, escuelas, y organizaciones de astronomía para obtener este tipo de protección.
+            </p>
+            
+        </div>
+        <div class="imagenText">
+            <img src="/image/astronomia.jpg" alt="eclipse" class="imgDatos">
+            <span><button class="btn"><a href="·">Astronomía</a></button></span>
+        </div>
+    </div>
+
+
     <footer>
-        <p class="cpr">&copy; Copyright Grupo 2 Comision 23030 Codo a Codo BA - 2023 Todos los derechos reservados</p>
+        <div class="icon-flex"> 
+            <a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" style="color: #fcfcfd;"></i></a>     
+            <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></i></a> <!--falta cambiar tamaño-->
+        </div>
+        <p>Copyright© 2023 ExploreSci</p>
     </footer>
+
+    <script src="/js/main.js"></script>
 </body>
 </html>

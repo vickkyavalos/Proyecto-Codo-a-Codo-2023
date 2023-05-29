@@ -1,45 +1,315 @@
-/* HEADER*/
-    header {
-        background-color: #3d57db;
-    }
-    .logo_img {
-        width: 5%;
-        height: 5%;
-    }
-    .nombre_pag {
-        position: absolute;
-		top: 5%;
-		left: 15%;
-        text-transform: uppercase;
-		color: #000000;
-		font-weight: bold;
-		font-size: 15px;
-    }
-    nav{
-		position: absolute;
-		top: 5%;
-		right: 1%;
-    }
-    nav li {
-        display: inline;
-        margin: 0 0 0 10px;
-    }
-    nav a {
-        text-transform: uppercase;
-		color: #000000;
-		font-weight: bold;
-		font-size: 15px;
-		text-decoration: none;
-    }
-    nav a:hover {
-		color: #c48c19;
-		text-decoration: underline;
-    }
-    .buscador {
-		position: absolute;
-		top: 2%;
-		right: 1%;
-    }
-/* BODY*/
+:root {
+  --blue: #114F5F;
+  --green: #1a936f;
+  --VerdeClaro: #88d498;
+  --verdePastel: #d9e9d4;
+  --beige: #f5efe1;
+  --black: hsl(0, 0%, 0%);
+  --fondoBody:  #fcfffb;
+  font-family: 'Inter', sans-serif;
+  --text-color: #f8efef;
+}  
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+  min-height: 100vh;
+  background-color: var(--fondoBody);
+  justify-content: center;
+}
+/*--------------------------------------------------------------------------------*/
+  /*barra de navegacón
+  
+/*header*/
+.logo{
+  width: 75px;
+  margin: 10px;
+}
+.contenedor-logo{
+  width:100%;
+  margin:auto;
+  text-align:center;
+}
+h1{
+  font-family: 'Inter', sans-serif;
+  margin: 8px;
+  letter-spacing: 5px;
+  color: var(--blue);
+}
 
-/* FOOTER*/
+/*barra de navegación*/
+nav {
+  background-color: var(--green);
+  padding: 0 15px;
+  align-items: center;
+}
+nav a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-size: 20px;
+}
+.menu, .submenu {
+  list-style-type: none;
+}
+.item {
+  padding: 10px;
+}
+.item.button {
+  padding: 9px 5px;
+}
+.item:not(.button) a:hover, .item a:hover::after {
+  color: var(--VerdeClaro);
+}
+/* menú para celulares */
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li a {
+  display: block;
+  padding: 15px 5px;
+}
+.menu li.subitem a {
+  padding: 15px;
+}
+.toggle {
+  order: 1;
+  font-size: 20px;
+}
+.item {
+  order: 3;
+  width: 100%;
+  text-align: center;
+  display: none;
+}
+.active .item {
+  display: block;
+}
+/* Submenu up from mobile screens */
+.submenu {
+  display: none;
+}
+.submenu-active .submenu {
+  display: block;
+}
+.has-submenu i {
+  font-size: 12px;
+}
+.has-submenu > a::after {
+  font-family: "Font Awesome 5 Free";
+  font-size: 12px;
+  line-height: 16px;
+  font-weight: 900;
+  content: "\f078";
+  color: var(--VerdeClaro);
+  padding-left: 5px;
+}
+.subitem a {
+  padding: 10px 15px;
+}
+.submenu-active {
+  background-color: var(--green);
+  border-radius: 3px;
+}
+
+/* Tablet menu */
+@media all and (min-width: 700px) {
+  .menu {
+      justify-content: center;
+  }
+  .logo {
+      flex: 1;
+  }
+  .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+  }
+  .toggle {
+      flex: 1;
+      text-align: right;
+      order: 2;
+  }
+}
+
+/* Desktop menu */
+@media all and (min-width: 960px) {
+  .menu {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: none;
+  }
+  .logo {
+    order: 0;
+  }
+  .item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+  }
+  .submenu-active .submenu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    background: var(--green);
+  }
+  .toggle {
+    display: none;
+  }
+  .submenu-active {
+    border-radius: 0;
+  }
+}
+
+/*--------------------------------------------------------------------------------*/
+/*body*/
+
+.info{
+  width: 100%;
+  margin: 60px auto;
+}
+.info p{
+  text-align: center;
+  font-family: 'Inter', sans-serif;
+  font-size: 20px;
+  margin: 15px auto;  
+  width: 45%;
+}
+
+/*texto animation*/
+.title-word {
+  animation: color-animation 3s linear infinite;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--VerdeClaro)}
+  32%   {color: var(--beige)}
+  33%   {color: var(--blue)}
+  65%   {color: var(--verdePastel)}
+  66%   {color: var(--beige)}
+  99%   {color: var(--green)}
+  100%  {color: var(--blue)}
+}
+.container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+  height: 100px;
+}
+
+.title {
+  font-family: 'Inter',sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
+/*--------------------------------------------------------------------------------*/
+
+/*datos de las Ciencias*/
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  margin: 45px auto;
+  width: 1300px;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+  background-color: white;
+}
+.imagenText{ 
+  width: 50%;
+  padding: 20px ;
+  border-radius: 5px;
+  margin: 0 auto;
+  position: relative;
+  top: 30%; 
+}
+.imgDatos{
+  width: 100%;
+  object-fit: cover;
+  object-position: right;
+  margin: 0 auto;
+  transition: all 0.3s;
+  filter: brightness(1);
+  border-radius: 5px;
+}
+.datos{
+    width: 48%;
+    font-size: 15.5px;
+    margin: 15px 15px 0 0;
+}
+.datos1{
+  width: 45.5%;
+  font-size: 15.5px;
+  margin: 15px 0 15px 30px;
+}
+.btn{
+    position: absolute;
+    top: 45%;
+    left: 45%;
+    padding: 5px 10px;
+    font-family: 'Inter', sans-serif;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    transition: .3s;
+    border-radius: 5px;
+    height: 48px; 
+    touch-action: manipulation;
+    align-items: center; 
+    justify-content: center; 
+    user-select: none;
+   -webkit-user-select: none;
+   background-color: var(--beige);
+  }
+.btn a{
+  color: var(--black);
+  font-family: 'Inter', sans-serif; 
+  font-size: 18px;
+  margin: 0 auto;
+}
+.btn:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px); 
+  background-color: var(--verdePastel); 
+}
+.imagenText span{
+  display: none;
+}
+.imagenText:hover span{
+  display: block;
+}
+.imagenText:hover .imgDatos{
+  transform: scale(1.1);
+  filter: brightness(0.3);
+} 
+
+/*--------------------------------------------------------------------------------*/
+/*footer*/
+footer{
+  background-color: var(--green);
+}
+
+footer p{
+  font-family: 'Inter', sans-serif;
+	text-align: center;
+	margin-left: 15px;
+	font-size: 16px;
+	color: var(--text-color);
+}
+
+.icon-flex{
+  display: flex;
+  justify-content: center;
+}
+.icon-flex i{
+  margin-left: 20px;
+  margin-top: 20px;
+}
