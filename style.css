@@ -182,6 +182,34 @@ nav a {
   width: 45%;
 }
 
+/*texto animation*/
+.title-word {
+  animation: color-animation 3s linear infinite;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--VerdeClaro)}
+  32%   {color: var(--beige)}
+  33%   {color: var(--blue)}
+  65%   {color: var(--verdePastel)}
+  66%   {color: var(--beige)}
+  99%   {color: var(--green)}
+  100%  {color: var(--blue)}
+}
+.container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+  height: 100px;
+}
+
+.title {
+  font-family: 'Inter',sans-serif;
+  font-weight: 800;
+  font-size: 30px;
+  text-transform: uppercase;
+}
+
 /*--------------------------------------------------------------------------------*/
 
 /*datos de las Ciencias*/

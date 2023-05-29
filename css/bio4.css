@@ -5,6 +5,7 @@
   --verdePastel: #d9e9d4;
   --beige: #f5efe1;
   --black: #000;
+  --fondoBody:  #fcfffb;
   font-family: 'Inter', sans-serif;
   --text-color: #f8efef;
 }  
@@ -14,9 +15,8 @@ body {
   padding: 0;
   font-family: Arial, sans-serif;
   width:100%;
+  background-color: var(--fondoBody);
 }
-
-
 
 /* Estilos para las secciones de contenido */
 .content-section {
@@ -27,6 +27,7 @@ body {
   font-size: 36px;
   margin-top: 0;
   text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* Estilos para el iframe */
@@ -50,10 +51,12 @@ iframe {
 .grid-item h3 {
   font-size: 24px;
   margin-top: 0;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .grid-item p {
   font-size: 16px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 footer {
@@ -85,6 +88,7 @@ main.section {
 
 h2{
   background-image: url("/image/ADN.jpg");
+  margin: 0 auto;
 }
 
 ul{
@@ -118,6 +122,7 @@ nav a {
   color: var(--text-color);
   text-decoration: none;
   font-size: 20px;
+  font-family: 'Inter', sans-serif;
 }
 .menu, .submenu {
   list-style-type: none;
@@ -243,6 +248,8 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .grid-item-2 {
@@ -250,6 +257,8 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .grid-item-3 {
@@ -257,6 +266,8 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .grid-item-4 {
@@ -264,6 +275,8 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .grid-item-5 {
@@ -271,6 +284,8 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 
 .grid-item-6 {
@@ -278,6 +293,8 @@ nav a {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 12px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
 }
 /*colores de cada sección*/
 .text1{

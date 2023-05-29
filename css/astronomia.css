@@ -1,3 +1,14 @@
+:root {
+    --blue: #114F5F;
+    --green: #1a936f;
+    --VerdeClaro: #88d498;
+    --verdePastel: #d9e9d4;
+    --beige: #f5efe1;
+    --black: hsl(0, 0%, 0%);
+    --fondoBody:  #fcfffb;
+    font-family: 'Inter', sans-serif;
+    --text-color: #f8efef;
+  }  
 * {
     margin: 0;
     padding: 0;
@@ -9,17 +20,167 @@ body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+  
+/*header*/
+.logo{
+    width: 75px;
+    margin: 10px;
+  }
+  .contenedor-logo{
+    width:100%;
+    margin:auto;
+    text-align:center;
+  }
+  h1{
+    font-family: 'Inter', sans-serif;
+    margin: 8px;
+    letter-spacing: 5px;
+    color: var(--blue);
+  }
+/*barra de navegación*/
+nav {
+    background-color: var(--green);
+    padding: 0 15px;
+    align-items: center;
+  }
+  nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif;
+  }
+  .menu, .submenu {
+    list-style-type: none;
+  }
+  .item {
+    padding: 10px;
+  }
+  .item.button {
+    padding: 9px 5px;
+  }
+  .item:not(.button) a:hover, .item a:hover::after {
+    color: var(--VerdeClaro);
+  }
+  /* menú para celulares */
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu li a {
+    display: block;
+    padding: 15px 5px;
+  }
+  .menu li.subitem a {
+    padding: 15px;
+  }
+  .toggle {
+    order: 1;
+    font-size: 20px;
+  }
+  .item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+  .active .item {
+    display: block;
+  }
+  /* Submenu up from mobile screens */
+  .submenu {
+    display: none;
+  }
+  .submenu-active .submenu {
+    display: block;
+  }
+  .has-submenu i {
+    font-size: 12px;
+  }
+  .has-submenu > a::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    content: "\f078";
+    color: var(--VerdeClaro);
+    padding-left: 5px;
+  }
+  .subitem a {
+    padding: 10px 15px;
+  }
+  .submenu-active {
+    background-color: var(--green);
+    border-radius: 3px;
+  }
+  
+  /* Tablet menu */
+  @media all and (min-width: 700px) {
+    .menu {
+        justify-content: center;
+    }
+    .logo {
+        flex: 1;
+    }
+    .item.button {
+        width: auto;
+        order: 1;
+        display: block;
+    }
+    .toggle {
+        flex: 1;
+        text-align: right;
+        order: 2;
+    }
+  }
+  
+  /* Desktop menu */
+  @media all and (min-width: 960px) {
+    .menu {
+      align-items: flex-start;
+      flex-wrap: nowrap;
+      background: none;
+    }
+    .logo {
+      order: 0;
+    }
+    .item {
+      order: 1;
+      position: relative;
+      display: block;
+      width: auto;
+    }
+    .submenu-active .submenu {
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 68px;
+      background: var(--green);
+    }
+    .toggle {
+      display: none;
+    }
+    .submenu-active {
+      border-radius: 0;
+    }
+  }
+  
+  /*--------------------------------------------------------------------------------*/
+
 /*-------------------- MAIN -------------------*/
 main {
-    background-image:  linear-gradient(
+    /* background-image:  linear-gradient(
         0deg,
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
+        
         )
-        ,url(/clonado/Proyecto-Codo-a-Codo-2023/image/nebulosa.jfif);
+        ,url(/image/nebulosa.jfif);
         background-position: center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: cover; */
+        background-color: var(--fondoBody);
 }
 
 /* INTRODUCCION*/ 
@@ -27,18 +188,21 @@ main {
 #introduccion {
     text-align: center;
     padding: 100px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #introduccion h1 {
     font-size: 2.5rem;
     padding: 10px;
-    color: white;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 #introduccion p {
     text-align: center;
     margin: 40px 200px;
-    color: white;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /* RAMAS */
@@ -52,6 +216,7 @@ main {
 
 #ramas h2{
     margin: 0 0 50px 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .container {
@@ -70,7 +235,7 @@ main {
     padding: 15px;
     font-size: 13px;
     margin-top: 50px;
-    
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .tarjeta {
@@ -93,7 +258,7 @@ main {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(/clonado/Proyecto-Codo-a-Codo-2023/image/astronomia.jfif);
+    ,url(/image/astronomia.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -105,7 +270,7 @@ main {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(/clonado/Proyecto-Codo-a-Codo-2023/image/astrofisica.jfif);
+    ,url(/image/astrofisica.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -117,7 +282,7 @@ main {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(/clonado/Proyecto-Codo-a-Codo-2023/image/big\ bang.jfif);
+    ,url(/image/big\ bang.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -133,12 +298,14 @@ main {
 .containerdos h3 {
     margin: 0 0 15px 0; 
     text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .containerdos p {
     padding: 15px;
     font-size: 13px;
     margin-top: 50px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .tarjetados {
@@ -161,7 +328,7 @@ main {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(/clonado/Proyecto-Codo-a-Codo-2023/image/astrobiologia.jfif);
+    ,url(/image/astrobiologia.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -173,7 +340,7 @@ main {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(/clonado/Proyecto-Codo-a-Codo-2023/image/orbita.jfif);
+    ,url(/image/orbita.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -185,9 +352,32 @@ main {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(/clonado/Proyecto-Codo-a-Codo-2023/image/astroquimica.jpg);
+    ,url(/image/astroquimica.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+
+/*footer*/
+footer{
+  background-color: var(--green);
+}
+
+footer p{
+  font-family: 'Inter', sans-serif;
+  text-align: start;
+  margin-left: 15px;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+.icon-flex{
+  display: flex;
+  justify-content: center;
+}
+.icon-flex i{
+  margin-left: 20px;
+  margin-top: 20px;
 }
 
