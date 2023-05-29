@@ -174,3 +174,99 @@ nav a {
 }
 }
 
+
+/*titulo historia*/
+h2{
+    color: var(--blue);
+    font-size: 45px;
+    margin: 70px;
+    text-align: center;
+    font-family:  'Inter', sans-serif,;
+}
+
+/*información */
+.flex-container {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 70%;
+    background-color: white;
+}
+.flex-container2 {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 30%;
+    background-color: white;
+}
+.texto{
+    text-align: center justify;   
+    width: 50%;
+    height: 200;
+    padding: 50px;
+}
+.texto3{
+    text-align: left;   
+    width: 50%;
+    height: 200;
+    padding: 30px;
+}
+.texto1{
+    margin-top: 50%;
+    width: 50%;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--blue);
+}
+.texto2{
+    margin-top: 180px;
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    color: var(--blue);
+}
+
+.infoP{
+    text-align: center;
+    padding-left: 50px;    
+    width: 500px;
+    height: 200px;
+    padding: 50px;
+    font-family: 'Inter',
+}
+.historiadores{
+    width: 70%;
+    height: 100%;
+    margin: 40px auto;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: rgba(241, 29, 29, 0.23) 0px 3px 6px, rgba(241, 29, 29, 0.23) 0px 3px 6px;
+    text-align: center;
+}
+/*Footeer*/
+footer{
+    background-color: var(--green);
+  }
+  
+  footer p{
+    font-family: 'Inter', sans-serif;
+    text-align: start;
+    margin-left: 15px;
+    font-size: 16px;
+    color: var(--text-color);
+  }
+  
+  .icon-flex{
+    display: flex;
+    justify-content: center;
+  }
+  .icon-flex i{
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
