@@ -28,9 +28,10 @@
   }
   h1{
 	font-family: 'Inter', sans-serif;
-    margin: 8px;
-    letter-spacing: 5px;
-    color: var(--blue);
+  margin: 8px;
+  letter-spacing: 5px;
+  color: var(--blue);
+  font-size: 30px;
   }
   
   /*barra de navegación*/
