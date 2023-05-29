@@ -185,59 +185,53 @@ h2{
 }
 
 /*información Psicología*/
-.flex-container {
+.infoP{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 12px;
+    
+   
+}
+.infoP p{
+    margin: 0 auto;
+    text-align: justify;
+    width: 95%;
+    height: 150px;
+}
+.flex-container{
+    margin: 0 auto;
+}
+.ramas{
+    text-align: center;
+}
+.flex-container1 {
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0px auto; 
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 29%;
     margin: 0 auto;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    width: 50%;
-    background-color: white;
+    background-image: url(/image/psicología.jpg); /* Ruta de la imagen de fondo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-.texto{
-    text-align: center;   
-    width: 50%;
-    height: 200;
-    padding: 50px;
+.card p{
+    padding: 15%;
+    color: var(--text-color);
 }
-.texto1{
-    margin-top: 100px;
-    width: 50%;
+h4{
     text-align: center;
-    font-weight: 600;
-    font-size: 25px;
-    color: var(--blue);
-}
-.texto2{
-    margin-top: 180px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 25px;
-    color: var(--blue);
-}
-
-.psicoT{
-    text-align: center;
-    height: 100px;
-    color: var(--blue);
-    font-size: 20px;
-}
-.infoP{
-    text-align: center;
-    padding-left: 50px;    
-    width: 500px;
-    height: 200px;
-    padding: 50px;
-    font-family: 'Inter',
-}
-.saludM{
-    width: 50%;
-    height: 30%;
-    margin: 25px auto;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: rgba(241, 29, 29, 0.23) 0px 3px 6px, rgba(241, 29, 29, 0.23) 0px 3px 6px;
-    text-align: center;
+    padding:5px;
+    margin-top: 30px;
+    color: var(--text-color);
 }
 /*Footeer*/
 footer{
