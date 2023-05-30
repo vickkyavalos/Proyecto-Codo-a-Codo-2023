@@ -299,18 +299,10 @@ footer{
 
 footer p{
   font-family: 'Inter', sans-serif;
-<<<<<<< HEAD
-  text-align: start;
-  margin-left: 15px;
-  font-size: 16px;
-  padding-bottom: 10px;
-  color: var(--text-color);
-=======
 	text-align: center;
 	margin-left: 15px;
 	font-size: 16px;
 	color: var(--text-color);
->>>>>>> 49589975bd063583c0dc17673f933f841307afbb
 }
 
 .icon-flex{
