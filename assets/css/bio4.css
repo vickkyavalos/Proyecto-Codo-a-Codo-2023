@@ -87,7 +87,7 @@ main.section {
 
 
 h2{
-  background-image: url("/image/ADN.jpg");
+  background-image: url("/assets/image/ADN.jpg");
   margin: 0 auto;
 }
 
@@ -244,7 +244,7 @@ nav a {
 
 /* Imágenes de fondo para cada categoría */
 .grid-item-1 {
-  background-image: url("/image/genes.jpg");
+  background-image: url("/assets/image/genes.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -253,7 +253,7 @@ nav a {
 }
 
 .grid-item-2 {
-  background-image: url("/image/eco.jpg");
+  background-image: url("/assets/image/eco.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -262,7 +262,7 @@ nav a {
 }
 
 .grid-item-3 {
-  background-image: url("/image/zoo.jpg");
+  background-image: url("/assets/image/zoo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -271,7 +271,7 @@ nav a {
 }
 
 .grid-item-4 {
-  background-image: url("/image/bot.jpg");
+  background-image: url("/assets/image/bot.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -280,7 +280,7 @@ nav a {
 }
 
 .grid-item-5 {
-  background-image: url("/image/paleo.jpg");
+  background-image: url("/assets/image/paleo.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -289,7 +289,7 @@ nav a {
 }
 
 .grid-item-6 {
-  background-image: url("/image/imagenmicro.jpg");
+  background-image: url("/assets/image/imagenmicro.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

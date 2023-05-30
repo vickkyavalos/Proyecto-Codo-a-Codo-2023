@@ -218,7 +218,7 @@ h2{
     margin: 0 auto;
     border-radius: 12px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    background-image: url(/image/psicología.jpg); /* Ruta de la imagen de fondo */
+    background-image: url(/assets/image/psicología.jpg); /* Ruta de la imagen de fondo */
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
