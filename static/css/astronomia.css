@@ -258,7 +258,7 @@ main {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(/assets/image/astronomia.jfif);
+    ,url(../image/astronomia.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -270,7 +270,7 @@ main {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(/assets/image/astrofisica.jfif);
+    ,url(../image/astrofisica.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -282,7 +282,7 @@ main {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(/assets/image/big\ bang.jfif);
+    ,url(../image/big\ bang.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -328,7 +328,7 @@ main {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(/assets/image/astrobiologia.jfif);
+    ,url(../image/astrobiologia.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -340,7 +340,7 @@ main {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(/assets/image/orbita.jfif);
+    ,url(../image/orbita.jfif);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -352,7 +352,7 @@ main {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(/assets/image/astroquimica.jpg);
+    ,url(../image/astroquimica.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
