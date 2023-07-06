@@ -8,3 +8,9 @@ class Psicologia(TemplateView):
 
 class Astronomia(TemplateView):
     template_name = "astronomia.html"
+    
+class Biologia(TemplateView):
+    template_name = "bio4.html"
+    
+class Nosotros(TemplateView):
+    template_name = "nosotro.html"
