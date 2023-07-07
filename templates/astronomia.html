@@ -1,0 +1,136 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Astronomia</title>
+    <link rel="icon" href="{%static './image/logo.png' %}">
+    <link rel="stylesheet" href="{% static './css/astronomia.css' %}">
+    
+    <script src="https://kit.fontawesome.com/ba5c97a2f9.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&family=Montserrat:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header><!--header con el nombre y logo de la página-->
+        <div class="contenedor-logo">
+            <img src="{%static './image/logo.png' %}" alt="logo" class="logo">
+            <h1 id="titulo">ExploreSci</h1>
+        </div>
+    </header>
+    <nav><!--comienza barra de navegación-->
+        <ul class="menu">
+          <li class="item"><a href="{% url 'Principal' %}">Inicio</a></li>
+          <li class="item has-submenu">
+            <a tabindex="0">Ciencias</a>
+            <ul class="submenu"><!--submenú de ciencias-->
+              <li class="subitem"><a href="{% url 'Astronomia' %}">Astronomía</a></li>
+              <li class="subitem"><a href="{% url 'Biologia' %}">Biología</a></li>
+              <li class="subitem"><a href="{% url 'Historia' %}">Historia</a></li>
+              <li class="subitem"><a href="{% url 'Psicologia' %}">Psicología</a></li>
+            </ul>
+          </li>
+          <li class="item"><a href="{% url 'Formulario' %}">Novedades</a></li>
+          <li class="item"><a href="{% url 'Contacto'%}">Contacto</a></li>
+            <li class="item"><a href="{% url 'Nosotros' %}">Sobre Nosotros</a></li>
+          <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+      </nav>
+    <br><br>
+
+
+    <main>
+        <section id="introduccion">
+            <div>
+                <h1> Astronomía</h1>
+                <p>
+                La astronomía es la ciencia que estudia los cuerpos celestes 
+                y los fenómenos astronómicos. Incluye el análisis de estrellas, 
+                planetas, satélites naturales, asteroides, cometas, nebulosas, 
+                galaxias y otros objetos del universo. También abarca temas como 
+                la cosmología, que investiga el origen, desarrollo y destino final 
+                del universo, y se relaciona con disciplinas como la astrofísica, 
+                la astroquímica y la astrobiología. La información astronómica se 
+                obtiene principalmente a través de la detección remota, aunque algunos 
+                fenómenos celestes se han replicado en laboratorios. La astronomía ha 
+                sido practicada desde la antigüedad y ha contado con contribuciones de 
+                importantes científicos como Aristóteles, Galileo Galilei e Isaac Newton. 
+                A lo largo del tiempo, se han introducido instrumentos como el telescopio, 
+                el espectroscopio y la fotografía, lo que ha permitido el avance de la 
+                astronomía como una ciencia formal.
+                </p>
+            </div>
+        </section>
+        <section id="ramas">
+            <h2 class="titulo">Principales ramas de la astronomia</h2>
+            <div class="container">
+
+                <div class="tarjeta">
+                    <h3>Astronomía</h3>
+                    <p>
+                        Estudia los cuerpos celestes utilizando telescopios y otros 
+                        instrumentos.
+                    </p>                  
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Astrofísica</h3>
+                    <p>
+                        Combina los principios de la física con la observación 
+                        astronómica para comprender los fenómenos y las propiedades 
+                        físicas de los cuerpos celestes. 
+                    </p>
+                </div>
+
+                <div class="tarjeta">
+                    <h3>Cosmología</h3>
+                    <p>
+                        Se ocupa del estudio del origen, la evolución y la estructura 
+                        del universo en su conjunto.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="containerdos">
+
+                <div class="tarjetados">
+                    <h3>Astrobiología</h3>
+                    <p>
+                        Se centra en el estudio de la vida en el universo. 
+                        Investigan la posibilidad de vida en otros planetas.
+                </div>
+                    
+                <div class="tarjetados">
+                    <h3>Dinámica Celeste</h3>
+                    <p>
+                        Se dedica al estudio de los movimientos y las interacciones 
+                        gravitatorias de los cuerpos celestes. 
+                    </p>
+                </div>
+
+                <div class="tarjetados">
+                    <h3>Astroquímica</h3>
+                    <p>
+                        Combina la astronomía y la química para investigar la composición química 
+                        del universo y comprender cómo se forman y evolucionan las moléculas en el espacio.
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer id="footer">
+        <div class="icon-flex"> 
+            <a href="#"><i class="fa-brands fa-facebook-f" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram" style="color: #fcfcfd;"></i></a>     
+            <a href="#"><i class="fa-brands fa-twitter" style="color: #ffffff;"></i></i></a> <!--falta cambiar tamaño-->
+        </div>
+        <p>Copyright© 2023 ExploreSci</p>
+    </footer>
+
+    <script src="{% static './js/main.js' %}"></script>
+</body>
+</html>

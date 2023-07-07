@@ -1,0 +1,255 @@
+/*agregar esto a todos los estilos*/
+:root {
+    --blue: #114F5F;
+    --green: #1a936f;
+    --VerdeClaro: #88d498;
+    --verdePastel: #d9e9d4;
+    --beige: #f5efe1;
+    --black: #000;
+    --fondoBody:  #fcfffb;
+    font-family: 'Inter', sans-serif,Verdana, Geneva, Tahoma, sans-serif;
+    --text-color: #f8efef;
+    
+}  
+
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif,
+}
+
+body{
+  min-height: 100vh;
+  background-color: var(--fondoBody);
+  justify-content: center;
+  font-family: Verdana;
+}
+/*----------------*/
+
+/*header*/
+.logo{
+    width: 70px;
+    margin: 10px;
+  }
+.contenedor-logo{
+    width:100%;
+    margin:auto;
+    text-align:center;
+  }
+h1{
+    font-family: 'Inter', sans-serif;
+    margin: 8px;
+    letter-spacing: 5px;
+    color: var(--blue);
+  }
+
+/*barra de navegación*/
+nav {
+    background-color: var(--green);
+    padding: 0 15px;
+    align-items: center;
+}
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Inter', sans-serif ;
+  }
+.menu, .submenu {
+    list-style-type: none;
+}
+.item {
+    padding: 10px;
+}
+.item.button {
+    padding: 9px 5px;
+}
+.item:not(.button) a:hover, .item a:hover::after {
+    color: var(--VerdeClaro);
+}
+  /* menú para celulares */
+.menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu li a {
+    display: block;
+    padding: 15px 5px;
+}
+.menu li.subitem a {
+    padding: 15px;
+}
+.toggle {
+    order: 1;
+    font-size: 20px;
+}
+.item {
+    order: 3;
+    width: 100%;
+    text-align: center;
+    display: none;
+}
+.active .item {
+    display: block;
+}
+  /* Submenu up from mobile screens */
+.submenu {
+    display: none;
+}
+.submenu-active .submenu {
+    display: block;
+}
+.has-submenu i {
+    font-size: 12px;
+}
+.has-submenu > a::after {
+    font-family: "Font Awesome 5 Free";
+    font-size: 12px;
+    line-height: 16px;
+    font-weight: 900;
+    content: "\f078";
+    color: var(--VerdeClaro);
+    padding-left: 5px;
+}
+.subitem a {
+    padding: 10px 15px;
+}
+.submenu-active {
+    background-color: var(--green);
+    border-radius: 3px;
+}
+  
+  /* Tablet menu */
+@media all and (min-width: 700px) {
+.menu {
+    justify-content: center;
+    }
+.logo {
+    flex: 1;
+    }
+.item.button {
+    width: auto;
+    order: 1;
+    display: block;
+}
+.toggle {
+    flex: 1;
+    text-align: right;
+    order: 2;
+}
+}
+  
+  /* Desktop menu */
+ @media all and (min-width: 960px) {
+.menu {
+    align-items: flex-start;
+    flex-wrap: nowrap;
+    background: none;
+}
+.logo {
+    order: 0;
+}
+.item {
+    order: 1;
+    position: relative;
+    display: block;
+    width: auto;
+}
+.submenu-active .submenu {
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 68px;
+    background: var(--green);
+}
+.toggle {
+    display: none;
+}
+.submenu-active {
+    border-radius: 0;
+}
+}
+
+
+/*titulo psicología*/
+h2{
+    color: var(--blue);
+    font-size: 45px;
+    margin: 70px;
+    text-align: center;
+    font-family:  'Inter', sans-serif,;
+}
+
+/*información Psicología*/
+.infoP{
+    width: 50%;
+    margin: 0 auto;
+    border-radius: 12px;
+    
+   
+}
+.infoP p{
+    margin: 0 auto;
+    text-align: justify;
+    width: 95%;
+    height: 150px;
+}
+.flex-container{
+    margin: 0 auto;
+}
+.ramas{
+    text-align: center;
+}
+.flex-container1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    margin: 0px auto; 
+    
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    margin: 0 auto;
+    border-radius: 12px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    background-image: url(../image/psicología.jpg); /* Ruta de la imagen de fondo */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card p{
+    padding: 15%;
+    color: var(--text-color);
+}
+h4{
+    text-align: center;
+    padding:5px;
+    margin-top: 30px;
+    color: var(--text-color);
+}
+/*Footeer*/
+footer{
+    background-color: var(--green);
+  }
+  
+  footer p{
+    text-align: start;
+    margin-left: 15px;
+    font-size: 16px;
+    color: var(--text-color);
+  }
+  
+  .icon-flex{
+    display: flex;
+    justify-content: center;
+  }
+  .icon-flex i{
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+  
