@@ -31,13 +31,13 @@
             <a tabindex="0">Ciencias</a>
             <ul class="submenu"><!--submenú de ciencias-->
               <li class="subitem"><a href="{% url 'Astronomia' %}">Astronomía</a></li>
-              <li class="subitem"><a href="/pages/bio4.html">Biología</a></li>
-              <li class="subitem"><a href="/pages/historia.html">Historia</a></li>
+              <li class="subitem"><a href="{% url 'Biologia' %}">Biología</a></li>
+              <li class="subitem"><a href="{% url 'Historia' %}">Historia</a></li>
               <li class="subitem"><a href="{% url 'Psicologia' %}">Psicología</a></li>
             </ul>
           </li>
           <li class="item"><a href="{% url 'Formulario' %}">Novedades</a></li>
-          <li class="item"><a href="#footer">Contacto</a></li>
+          <li class="item"><a href="{% url 'Contacto'%}">Contacto</a></li>
             <li class="item"><a href="{% url 'Nosotros' %}">Sobre Nosotros</a></li>
           <li class="toggle"><a href="#"><i class="fas fa-bars"></i></a></li>
         </ul>
