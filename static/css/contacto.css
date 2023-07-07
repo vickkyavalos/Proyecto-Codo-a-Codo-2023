@@ -206,66 +206,36 @@ nav a {
 
 /* main */
 
-#introduccion {
-    text-align: left;
-    padding: 100px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 a {
     font-size: 1rem;
     text-decoration: none;
     color: inherit;
 }
-
-#introduccion h1 {
-    font-size: 2.5rem;
-    padding: 10px;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
-#introduccion p {
+h2{
     text-align: center;
-    margin: 40px 200px;
-    color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 40px;
+    margin: 10%;
 }
-
-#ramas {
-    display: flex;
-    flex-direction: column;
-    color: white;
-    text-align: center;
-}
-
-#ramas h2{
-    margin: 0 0 50px 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 .container {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     margin: 25px;
 }
-
-.container h3 {
-    margin: 0 0 15px 0; 
+.container h3 { 
     text-align: center;
+    color: var(--text-color);
+    font-size: 35px;
 }
-
 .container p {
     padding: 15px;
-    font-size: 13px;
-    margin-top: 50px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 25px;
+    color: var(--text-color);
+    text-align: center;
 }
-
 .tarjeta {
     background-color: black;
-    width: 350px;
+    width: 25%;
     height: 300px;
     padding: 30px;
     border-radius: 15px;
@@ -283,7 +253,7 @@ a {
         rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
     )
-    ,url(../../image/psicología.jpg);
+    ,url(../image/psicología.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -320,8 +290,7 @@ footer {
 }
 
 footer p {
-    font-family: 'Inter', sans-serif;
-    text-align: start;
+    text-align: center;
     margin-left: 15px;
     font-size: 16px;
     color: var(--text-color);

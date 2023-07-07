@@ -16,7 +16,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-
+    font-family: 'Inter', sans-serif,
 }
 
 body {
@@ -210,74 +210,57 @@ nav a {
 h2 {
     color: var(--blue);
     font-size: 45px;
-    margin-bottom: 70px;
-    padding-top: 3%;
+    margin: 70px;
     text-align: center;
-    font-family: 'Inter', sans-serif;
+
 }
 
 /* intro */
-
 #introduccion {
     text-align: left;
     padding: 2rem;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 80%;
 }
-
 #introduccion h1 {
     text-align: center;
     font-size: 2rem;
     padding: 0.63rem;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
 
+}
 #introduccion p {
     text-align: center;
-    margin: 40px 200px;
+    margin: 0 auto;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-/*información Psicología*/
+/*Cards con info*/
 .flex-container1 {
     display: flex;
     flex-wrap: wrap;
-    width: 100%;
-    margin: 0 auto;
+    width: 70%;
+    margin: 0px auto; 
 
 }
-
+.texto{
+    text-align: center;
+}
 .card {
     display: flex;
     flex-direction: column;
-    width: 45%;
-    margin: 0 auto;
+    width: 32%;
+    margin: 10px auto;
     border-radius: 10px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    background-image: url(/assets/image/Historia.jpg);
+    background-image: url(../image/Historia.jpg);
     background-position: left;
     background-repeat: no-repeat;
     background-size: cover;
     filter: opacity(85%);
 }
-
 .card p {
     padding: 5%;
     color: var(--text-color);
-}
-.card2 {
-    display: flex;
-    flex-direction: column;
-    width: 95%;
-    margin: 0 auto;
-    border-radius: 10px;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
-    background-image: url(/assets/image/Historia.jpg) ;
-    background-position: left;
-    background-repeat: no-repeat;
-    background-size: cover;
-    filter: opacity(90%);
 }
 
 .card2 p {
@@ -285,15 +268,6 @@ h2 {
     padding: 5%;
     color: var(--text-color);
 }
-
-.flex-container2 {
-    display: flex;
-    flex-wrap: nowrap;
-    width: 100%;
-    margin-top: 3rem;
-
-}
-
 h4 {
     text-align: center;
     padding: 5px;
@@ -302,26 +276,24 @@ h4 {
 }
 
 .historiadores{
-    margin: 2rem 2rem 0rem;
-    padding-bottom: 2rem;
+    margin: 0 auto;
+    padding:5%;
 }
 
 .historiadores h1 {
     font-size: 1.5rem;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
 }
 
 .historiadores p {
-    text-align: center;
     color: black;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+    text-align: center;
 }
+section{
+    margin: 0 auto;
 
-/* main */
-
-main {
-    background-color: #fdfad0;
 }
 
 /*Footeer*/
