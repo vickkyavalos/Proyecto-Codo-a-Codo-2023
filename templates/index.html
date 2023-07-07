@@ -64,7 +64,7 @@
         <div class="flex-container"><!--historia-->
             <div class="imagenText">
                 <img src="{% static './image/druidas.jpg' %}" alt="el santuario de Stonehenge" class="imgDatos">
-                <span><button class="btn"><a href="/pages/historia.html">Historia</a></button></span>      
+                <span><button class="btn"><a href="{% url 'Historia' %}">Historia</a></button></span>      
             </div>
             <div class="datos">          
                 <h3>Datos sobre los druidas</h3> 
@@ -96,7 +96,7 @@
         </div>
         <div class="imagenText">
             <img src="{% static './image/psicología.jpg' %}" alt="psicologia libro" class="imgDatos"> 
-            <span><button class="btn"><a href="/pages/psicologia.html">Psicología</a></button></span>
+            <span><button class="btn"><a href="{% url 'Psicologia' %}">Psicología</a></button></span>
         </div>
     </div>
 
@@ -104,7 +104,7 @@
     <div class="flex-container"><!--Biología-->
         <div class="imagenText">
             <img src="{% static './image/biologia.jpg' %}" alt="" class="imgDatos">
-            <span><button class="btn"><a href="/pages/bio4.html">Biología</a></button></span>
+            <span><button class="btn"><a href="{% url 'Biologia' %}">Biología</a></button></span>
         </div>
         <div class="datos">
             <h3>Novedades sobre la Biología</h3> 
@@ -145,7 +145,7 @@
         </div>
         <div class="imagenText">
             <img src="{% static './image/astronomia.jpg' %}" alt="eclipse" class="imgDatos">
-            <span><button class="btn"><a href="/pages/astronomia.html">Astronomía</a></button></span>
+            <span><button class="btn"><a href="{% url 'Astronomia' %}">Astronomía</a></button></span>
         </div>
     </div>
 
